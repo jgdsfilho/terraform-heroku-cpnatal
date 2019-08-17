@@ -16,10 +16,18 @@
     * A instalação também depende do SO. https://developers.cloudflare.com/terraform/getting-started/installing/
     
         `$ wget -q https://releases.hashicorp.com/terraform/0.12.6/terraform_0.12.6_linux_amd64.zip`
-    
-    Verificando a instalação:
         
-           
+        `$ unzip terraform_0.12.6_linux_amd64.zip` 
+        
+        `$ mv terraform /usr/local/bin/terraform`
+    * Verificando a instalação:
+        
+        `$ terraform version`
+        
+* Clonar a aplicação que será feito deploy
+    * O clone é apenas didático, para olhar a aplicação
+    
+    `$ git clone `           
       
      
  

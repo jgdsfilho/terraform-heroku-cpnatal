@@ -35,6 +35,15 @@
         
         `$ terraform version`
         
+* Setar as credenciais do heroku para a utilização do terraform
+    * Gerando o token com heroku:
+        
+        `$ heroku authorizations:create --description nome_app`
+        
+    * Configurando variáveis de ambiente para o token e email, necessário na autenticação:
+        
+        `$ export HEROKU_API_KEY=<TOKEN>`
+        `$ export HEROKU_EMAIL=<EMAIL>`        
 * Clonar a aplicação que será feito deploy
     * O clone é apenas didático, para olhar a aplicação
     

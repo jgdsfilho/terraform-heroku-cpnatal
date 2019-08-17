@@ -11,7 +11,15 @@
     * Após o comando abaixo o browse será aberto para ser realizado o login
        
        `$ heroku login`
-       
-*
-       
+      
+* Instalar o terraform
+    * A instalação também depende do SO. https://developers.cloudflare.com/terraform/getting-started/installing/
+    
+        `$ wget -q https://releases.hashicorp.com/terraform/0.12.6/terraform_0.12.6_linux_amd64.zip`
+    
+    Verificando a instalação:
+        
+           
+      
+     
  

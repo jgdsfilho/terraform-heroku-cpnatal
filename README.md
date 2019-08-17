@@ -4,17 +4,6 @@
 
 * Criar conta no heroku (https://signup.heroku.com)
 
-* Criar ambiente virtual no python:
-    * Instalando virtualenv
-    
-        `$ sudo apt-get install python3-pip`
-        
-        `$ sudo pip3 install virtualenv`
-        
-    * Criando ambiente virtual
-        
-        `$ virtualenv -p python3 cpnatal`
-
 * Instalar heroku:
     * A instalação dependerá do SO utilizado. https://devcenter.heroku.com/articles/heroku-cli
     
@@ -43,11 +32,21 @@
     * Configurando variáveis de ambiente para o token e email, necessário na autenticação:
         
         `$ export HEROKU_API_KEY=<TOKEN>`
-        `$ export HEROKU_EMAIL=<EMAIL>`        
+ 
+        `$ export HEROKU_EMAIL=<EMAIL>`
+        
+     * Iniciando o terraform para fazer o download do provider do heroku
+     
+        `$ terraform init`
+
 * Clonar a aplicação que será feito deploy
     * O clone é apenas didático, para olhar a aplicação
     
-    `$ git clone `           
-      
+    `$ git clone https://github.com/jgdsfilho/cpnatal19.git`
      
- 
+* Criando terraform para provisionar um novo aplicativo
+    * Baixar o aquivo main.tf que etá no repositório do tutorial
+    
+    * Executar o comando que irá provisionar o seu app na nuvem:
+        
+        `$ terraform apply -var example_app_name=nome_que_vc_quer_para_app`

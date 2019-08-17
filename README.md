@@ -4,6 +4,17 @@
 
 * Criar conta no heroku (https://signup.heroku.com)
 
+* Criar ambiente virtual no python:
+    * Instalando virtualenv
+    
+        `$ sudo apt-get install python3-pip`
+        
+        `$ sudo pip3 install virtualenv`
+        
+    * Criando ambiente virtual
+        
+        `$ virtualenv -p python3 cpnatal`
+
 * Instalar heroku:
     * A instalação dependerá do SO utilizado. https://devcenter.heroku.com/articles/heroku-cli
     
